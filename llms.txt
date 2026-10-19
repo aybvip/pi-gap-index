@@ -1,0 +1,64 @@
+# pi-gap-index
+
+> Measured gaps in the public Pi surface, with reference specs. Read-only. No writes, no keys, no
+> submission. Adoption is `not-claimed`.
+
+## One-line answers
+
+- What is this? An index of **measured** deficits in the public Pi developer surface, each with a
+  reproducible probe, a reference specification, and conformance tests.
+- Does it claim Pi will adopt anything? **No.** Adoption is `not-claimed`.
+- Does it claim to be first? **No.** It says "no prior work found".
+- Does it submit proposals? **No.** Submission is the owner's action.
+- Does it write to the network? **No.** Every probe is read-only.
+- What are the gaps? G1 no public Mainnet Soroban RPC; G2 Horizon HAL links are RFC 6570 templates
+  (naive call returns 404); G3 event reads silently truncated (cap 100, limit ignored, endLedger
+  exclusive, retention 120,960); G4 the official proposal channel publishes no acceptance process;
+  G5 no compatibility contract for the RPC surface; G6 Mainnet contract capability announced but not
+  observed in the window.
+- What did the channel measurement show? 94 open PRs, 23 closed, **0 merged**, a 2-line ReadMe, last
+  content push 2026-04-17. This describes a channel, not anyone's intent.
+- What is the reference spec? SPEC-001: a read-only compatibility contract requiring explicit
+  truncation signals, a reported effective limit, stated `endLedger` exclusivity, and a returned
+  retention window.
+- How do I check it? `node gaps.mjs --probe` (live, read-only) and `node test/run.mjs` (offline).
+
+## Commands (zero-dependency)
+
+```
+node gaps.mjs --list          # measured gap registry
+node gaps.mjs --gap G1        # one gap in detail
+node gaps.mjs --channel       # measured channel state
+node gaps.mjs --readiness     # readiness ladder
+node gaps.mjs --boundaries    # what this repo refuses to claim
+node gaps.mjs --probe         # run the read-only probes
+node test/run.mjs             # offline invariants
+```
+
+## Claim kinds
+
+Every statement is exactly one of: `measured` · `documented` · `external` · `not-claimed`.
+
+## Never claimed
+
+Adoption, endorsement, obligation, priority, or novelty. No prediction that any proposal is merged.
+
+## Pages
+
+- Gaps: https://github.com/aybvip/pi-gap-index/tree/main/gaps
+- Spec: https://github.com/aybvip/pi-gap-index/blob/main/specs/SPEC-001-public-read-contract.md
+- Channel: https://github.com/aybvip/pi-gap-index/blob/main/docs/CHANNEL.md
+- Adoption: https://github.com/aybvip/pi-gap-index/blob/main/docs/ADOPTION.md
+- Prior art: https://github.com/aybvip/pi-gap-index/blob/main/docs/PRIOR-ART.md
+- Readiness: https://github.com/aybvip/pi-gap-index/blob/main/docs/READINESS.md
+- Sources: https://github.com/aybvip/pi-gap-index/blob/main/docs/SOURCES.md
+- Verification: https://github.com/aybvip/pi-gap-index/blob/main/docs/VERIFICATION.md
+
+## Related
+
+- pi-user-behavior: https://github.com/aybvip/pi-user-behavior
+- pi-soroban-events: https://github.com/aybvip/pi-soroban-events
+
+## Scope
+
+Read-only, unofficial. Not affiliated with Pi Network. Measured figures are as observed at run time.

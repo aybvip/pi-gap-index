@@ -1,0 +1,17 @@
+{
+  "name": "pi-gap-index",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Measured gaps in the public Pi surface, with read-only probes and a reference specification. No adoption or priority claims.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node test/run.mjs",
+    "list": "node gaps.mjs --list",
+    "channel": "node gaps.mjs --channel",
+    "boundaries": "node gaps.mjs --boundaries",
+    "probe": "node gaps.mjs --probe"
+  },
+  "files": ["README.md", "llms.txt", "gaps.mjs", "probe.mjs", "lib.mjs", "ref", "specs", "gaps", "docs", "test", "LICENSE"]
+}
