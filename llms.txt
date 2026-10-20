@@ -22,6 +22,9 @@
   truncation signals, a reported effective limit, stated `endLedger` exclusivity, and a returned
   retention window.
 - How do I check it? `node gaps.mjs --probe` (live, read-only) and `node test/run.mjs` (offline).
+- Does it review external claims? Yes — `docs/EXTERNAL-CLAIM-REVIEW.md` checks a public Pi economic
+  model claim by claim, with verdicts `matches` / `contradicts` / `uncheckable-here` / `out-of-scope`.
+  It names no author, makes no intent claim, and produces no price.
 
 ## Commands (zero-dependency)
 
@@ -53,6 +56,7 @@ Adoption, endorsement, obligation, priority, or novelty. No prediction that any 
 - Readiness: https://github.com/aybvip/pi-gap-index/blob/main/docs/READINESS.md
 - Sources: https://github.com/aybvip/pi-gap-index/blob/main/docs/SOURCES.md
 - Verification: https://github.com/aybvip/pi-gap-index/blob/main/docs/VERIFICATION.md
+- External claim review: https://github.com/aybvip/pi-gap-index/blob/main/docs/EXTERNAL-CLAIM-REVIEW.md
 
 ## Related
 

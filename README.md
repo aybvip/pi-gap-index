@@ -137,6 +137,7 @@ It is paired with:
 - [`docs/READINESS.md`](docs/READINESS.md) — what makes a spec reference-grade
 - [`docs/SOURCES.md`](docs/SOURCES.md) — every source, by claim kind
 - [`docs/VERIFICATION.md`](docs/VERIFICATION.md) — reproduce every claim yourself
+- [`docs/EXTERNAL-CLAIM-REVIEW.md`](docs/EXTERNAL-CLAIM-REVIEW.md) — a public Pi economic model, checked claim by claim
 - [`llms.txt`](llms.txt) — one-line answers for agent consumption
 
 ## Related repositories

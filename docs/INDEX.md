@@ -14,6 +14,7 @@ they claim. Read-only probes; no writes, no keys, no submission.
 | [`READINESS.md`](READINESS.md) | What makes a specification reference-grade |
 | [`SOURCES.md`](SOURCES.md) | Every source, by claim kind |
 | [`VERIFICATION.md`](VERIFICATION.md) | Reproduce every claim yourself |
+| [`EXTERNAL-CLAIM-REVIEW.md`](EXTERNAL-CLAIM-REVIEW.md) | A public Pi economic model, checked claim by claim |
 
 ## The gaps
 
